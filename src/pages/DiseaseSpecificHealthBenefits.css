@@ -1,0 +1,46 @@
+/* DiseaseSpecificHealthBenefits.css */
+.disease-page {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .disease-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .disease-page section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .disease-page h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .disease-page ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .disease-page ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .disease-page ul li strong {
+    color: #e74c3c;
+  }
+  
+  .disease-page section h2 + ul {
+    margin-top: 20px;
+  }
+  

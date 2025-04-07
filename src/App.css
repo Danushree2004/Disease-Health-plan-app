@@ -1,0 +1,192 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: darkcyan;
+  text-align: center;
+  padding: 20px;
+}
+
+.disease-selector {
+  margin-bottom: 20px;
+  background-color: darkcyan;
+}
+
+.disease-selector select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* App.css */
+
+/* Basic reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: darkcyan;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(200, 240, 240);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Active State for Navigation */
+.nav-link.active {
+  color: #f39c12;
+  transform: scale(1.1);
+}
+
+.nav-link.active::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Hover Effects for NavLinks */
+.nav-link:hover {
+  color: #f39c12;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Smooth transition effect */
+.navbar ul li {
+  transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+  transform: scale(1.1);
+}
+
+
+.disclaimer {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem 0;
+  line-height: 1.6;
+  font-style: italic;
+  animation: fadeIns 1s ease-out;
+  background-color: #ecf0f1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.disclaimer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.disclaimer-title {
+  color: #e74c3c;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Animating Myth-Fact Items */
+.myth-fact-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scale(1);
+  animation: slideIn 0.5s ease-out;
+}
+
+.myth-fact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.myth-fact-item.active {
+  background-color: #f0f8ff;
+}
+
+.myth {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.fact {
+  font-size: 1rem;
+  color: #27ae60;
+  margin-top: 1rem;
+  animation: fadeIns 0.5s ease-out;
+}
+
+/* Animations for Myth-Fact Items */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIns {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

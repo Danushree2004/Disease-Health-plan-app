@@ -1,0 +1,167 @@
+
+
+/* Nutrient Page Styling */
+.nutrient-page {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto 215px auto;
+}
+
+/* Hover Effect on Nutrient Page */
+.nutrient-page:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Disease Selector Container */
+.disease-selector1 {
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    background-image:  url('../images/bg.jpg');
+    background-size: cover; /* This ensures the image covers the entire div */
+    background-position: center; /* This centers the image within the div */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: auto;
+    max-height: 60vh;
+}
+.description{
+    font-size: 0.95rem;
+  background-color: #edeff1;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #647688;
+}
+/* Label Styling */
+.disease-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Dropdown Selector Styling */
+.disease-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #272727;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Dropdown Hover Effect */
+.disease-select:hover {
+    border-color: #007BFF;
+    background-color: #f0f8ff;
+}
+
+/* Nutrient Title */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000000;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    text-shadow: 1px 1px 2px rgba(61, 255, 2, 0.3),  /* Shadow to simulate the stroke (black, subtle) */
+        -1px -1px 2px rgba(0, 89, 255, 0.3),
+        1px -1px 2px rgb(255, 255, 255),
+        -1px 1px 2px rgba(255, 245, 245, 0.3);
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+
+ul li {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Pairing Foods */
+ul li strong {
+    color: #0519f5;
+    font-weight: bold;
+}
+
+/* How Pairings Work Section */
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    color:red;
+    opacity: 0;
+    animation: fadeIn 1.4s forwards;
+}
+
+/* Avoid Section Styling */
+h3:nth-of-type(2) {
+    color: red;
+}
+
+/* Transition FadeIn Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effect on List Items */
+ul li:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nutrient-page {
+        width: 95%;
+    }
+
+    .disease-selector {
+        padding: 10px;
+    }
+
+    .disease-label {
+        font-size: 16px;
+    }
+
+    .disease-select {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
